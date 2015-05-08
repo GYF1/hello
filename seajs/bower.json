@@ -1,0 +1,20 @@
+{
+  "name": "seajs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/GYF1/hello",
+  "authors": [
+    "GYF1 <guoyinfeng@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "seajs": "~3.0.0",
+    "jquery": "~2.1.4"
+  }
+}
