@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <p>hello world 1</p>
+    <p>hello world 2</p>
+    <p>hello world 3</p>
+    <p>hello world 1</p>
+    <p>hello world 2</p>
+    <p>hello world 3</p>
+    <p>hello world 1</p>
+    <p>hello world 2</p>
+    <p>hello world 3</p>
+    <script>
+    /*
+      d3.selectAll("p").style("color", "red");
+      d3.selectAll("p").style("color", function() {
+        return "hsl(" + Math.random() * 360 + ",100%,50%)";
+      });
+      d3.selectAll("p")
+      .data([4, 8, 15, 16, 23, 42])
+      .style("font-size", function(d) { return d + "px"; });
+
+
+d3.select("body")
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+  .enter().append("p")
+    .text(function(d) { return "I’m number " + d + "!"; });
+
+
+    d3.select("body").transition()
+    .style("background-color", "black");    
+
+    // Update…
+var p = d3.select("body") // 直接把数据绑定到Dom并输出，数组元素个数与p节点的个数一致就全部更新文本，如果不一致，就只更新现有p节点的文本，多余的数据会被保存起来，看下面会用到
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+    .text(function(d) { return d; });*/
+
+var p = d3.select("body") // 直接把数据绑定到Dom并输出，数组元素个数与p节点的个数一致就全部更新文本，如果不一致，就只更新现有p节点的文本，多余的数据会被保存起来，看下面会用到
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+
+    // Enter…[常用]
+p.exit().remove();
+    </script>
+  </body>
+</html>
